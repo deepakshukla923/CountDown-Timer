@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonbon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./images/candle.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Sacramento', cursive;
+    min-height: 100vh;
+    margin: 0;
+}
+
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+        body{
+            background-image: url("./images/clouds.jpg");
+        }
+        #head1{
+            color: black;
+            font-size:4rem ;
+        }
+        .big-text{
+            color: black;
+        }
+    }
+h1 {
+    font-family: 'Rock Salt', cursive;
+    color: #f5d1a5; 
+    font-weight:bold;
+    font-size: 4rem;
+    margin: 3rem 1rem 4rem 1rem;
+    text-align: center;
+}
+
+.countdown-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.big-text{
+    font-family: 'Bonbon', cursive;
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 5rem;
+    line-height: 1rem;
+    margin: 0rem 2rem 1rem;
+}
+
+.countdown-el{
+    text-align: center;
+}
+
+.countdown-el span{
+    color: antiquewhite;
+    font-size: 2rem;
+}
+
+#days{
+    color: olive;
+}
+
+#hours{
+    color: violet;
+}
+
+#mins{
+    color:goldenrod;
+}
+#secs{
+    color: maroon;
+}
+h2{
+    font-family: 'Sacramento', cursive;
+    background: -webkit-linear-gradient(#faebd7, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 2rem 2rem 3rem 2rem;
+    text-align: center;
+}
